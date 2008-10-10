@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>ngc</string>
+	</array>
+	<key>foldingStartMarker</key>
+	<string>\(</string>
+	<key>foldingStopMarker</key>
+	<string>\)</string>
+	<key>name</key>
+	<string>RS274NGC</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>match</key>
+			<string>[g|G]([ \t]*[\d])*[ \t]*</string>
+			<key>name</key>
+			<string>keyword.control.gcode.ngc</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>[m|M]([ \t]*[\d])*[ \t]*</string>
+			<key>name</key>
+			<string>keyword.control.mcode.ngc</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>[x|X|y|Y|z|Z|f|F|p|P|q|Q](\-?[\d]*\.?[\d]*)</string>
+			<key>name</key>
+			<string>variable.parameter.ngc</string>
+		</dict>
+		<dict>
+			<key>begin</key>
+			<string>\(</string>
+			<key>end</key>
+			<string>\)</string>
+			<key>name</key>
+			<string>comment.ngc</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.ngc</string>
+	<key>uuid</key>
+	<string>9692BC8B-5772-4700-9A6E-D5653090F58A</string>
+</dict>
+</plist>
